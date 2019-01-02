@@ -77,9 +77,10 @@ class ShoppingItems  {
     let customer2 = Customer(fullName: "Jane Smith", purchasedItems: [ItemGenerator.banana, ItemGenerator.premium])
     let customer3 = Customer(fullName: "Little Johnny", purchasedItems: [ItemGenerator.chipCookies, ItemGenerator.sandwitch])
     let customer4 = Customer(fullName: "Grandpa", purchasedItems: [ItemGenerator.coffee, ItemGenerator.ensure])
+    let customer5 = Customer(fullName: "Tom Hunk", purchasedItems: [ItemGenerator.watermelon])
     
     func customers() -> [Customer] {
-        return [customer1, customer2, customer3, customer4]
+        return [customer1, customer2, customer3, customer4, customer5]
     }
 }
 
@@ -94,6 +95,7 @@ struct ItemGenerator {
     static let chipCookies = Food(name: "Chocholate Chip Cookies", price: 3.45, discountPercentage: 10.00)
     static let sandwitch = Food(name: "Hamburger", price: 6.25, discountPercentage: 0.00)
     static let ensure = Food(name: "Ensure with Regularity", price: 25.25, discountPercentage: 8.00)
+    static let watermelon = ShopItem(name: "Watermelon", price: 5.99)
 
 
 }
